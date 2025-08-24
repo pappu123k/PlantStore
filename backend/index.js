@@ -10,13 +10,7 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors({
- origin: [
-    'http://localhost:5173',
-    'https://plantstore-frontend-qz9a.onrender.com'
-  ],
-  credentials: true,
-}));
+app.use(cors({ origin: 'https://plantstore-frontend-qz9a.onrender.com' }));
 app.use(express.json());
 
 // Routes
