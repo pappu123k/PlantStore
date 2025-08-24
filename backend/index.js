@@ -13,7 +13,7 @@ connectDB();
 app.use(cors({
  origin: [
     'http://localhost:5173',
-    'https://plantstore-frontend.onrender.com'
+    'https://plantstore-frontend-qz9a.onrender.com'
   ],
   credentials: true,
 }));
