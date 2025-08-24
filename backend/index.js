@@ -11,7 +11,10 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // allow frontend origin
+ origin: [
+    'http://localhost:5173',
+    'https://plantstore-frontend.onrender.com'
+  ],
   credentials: true,
 }));
 app.use(express.json());
