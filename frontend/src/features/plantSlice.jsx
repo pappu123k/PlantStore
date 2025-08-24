@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const API_URL = 'https://plantstore-backend-x5gz.onrender.com';
+const API_URL = 'https://plantstore-backend-x5gz.onrender.com/api/plants';
 
 export const fetchPlants = createAsyncThunk(
   'plants/fetchPlants',
